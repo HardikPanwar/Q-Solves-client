@@ -1,0 +1,40 @@
+import React from 'react'
+import './LeftSidebar.css';
+import {NavLink} from 'react-router-dom'
+import Globe from '../../assets/Globe.png'
+const LeftSidebar = () => {
+  return (
+    <div className='left-sidebar'>
+      <nav className="side-nav">
+        <NavLink to='/' className='side-nav-links' activeclass='active'>
+          <p>Home</p>
+        </NavLink>
+        <div className="side-nav-div">
+          {/* <div><p>PUBLIC</p></div> */}
+          <NavLink to={'/Questions'} className='side-nav-links' activeclass='active'>
+            <img src={Globe} width='15px' alt="Globe" />
+            <p style={{paddingLeft: "10px"}}>Questions</p>
+          </NavLink>
+          <NavLink to={'/Tags'} className='side-nav-links' activeclass='active' style={{paddingLeft:'40px'}}>
+            <p>Tags</p>
+          </NavLink>
+          <NavLink to={'/community'} className='side-nav-links' activeclass='active' style={{paddingLeft:'40px'}}>
+            <p>Community</p>
+          </NavLink>
+          <NavLink to={'/expert-chat'} className='side-nav-links' activeclass='active' style={{paddingLeft:'40px'}}>
+            <p>Expert Chat</p>
+          </NavLink>
+          <NavLink to={'/chat-bot'} className='side-nav-links' activeclass='active' style={{paddingLeft:'40px'}}>
+            <p>Open Source Kit</p>
+          </NavLink>
+          <NavLink to={'/Users'} className='side-nav-links' activeclass='active' style={{paddingLeft:'40px'}}>
+            <p>Users</p>
+          </NavLink>
+
+        </div>
+      </nav>
+    </div>
+  )
+}
+
+export default LeftSidebar
