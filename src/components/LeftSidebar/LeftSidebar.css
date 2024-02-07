@@ -1,5 +1,5 @@
-.left-sidebar{
-    width: 180px;
+.leftsidebar{
+    width: 200px;
     box-shadow: 1px 1px 0 rgba(0, 0, 0, 0.2);
     transition: box shadow ease-in-out 0.1s,transform ease-in-out 0.1s;
     transform: translateZ(0);
@@ -7,23 +7,23 @@
     font-size: 13px;
 }
 
-.side-nav{
+.sidenav{
     height: auto;
     max-width: 100%;
     position: sticky;
     margin: 50px 0px;
-    padding: 20px 0px;
+    padding: 20px 10px;
 }
 
-.side-nav-div{
+.sidenavdiv{
     padding: 10px 0px;
 }
 
-.side-nav-div div{
+.sidenavdiv div{
     padding-left: 10px;
 }
 
-.side-nav-links{
+.sidenavlinks{
     text-decoration: none;
     color: #000000;
     display: flex;
@@ -33,9 +33,10 @@
     transition: 0.2s;
     font-weight: 500;
     font-size: 15px;
+    padding-top: 25px;
 }
 
-.side-nav-links:hover{
+.sidenavlinks:hover{
     color: rgb(0, 0, 0);
 }
 

@@ -4,31 +4,31 @@ import {NavLink} from 'react-router-dom'
 import Globe from '../../assets/Globe.png'
 const LeftSidebar = () => {
   return (
-    <div className='left-sidebar'>
-      <nav className="side-nav">
-        <NavLink to='/' className='side-nav-links' activeclass='active'>
+    <div className='leftsidebar'>
+      <nav className="sidenav">
+        <NavLink to='/' className='sidenavlinks' activeclass='active' style={{paddingTop:"10px"}}>
           <p>Home</p>
         </NavLink>
-        <div className="side-nav-div">
+        <div className="sidenavdiv">
           {/* <div><p>PUBLIC</p></div> */}
-          <NavLink to={'/Questions'} className='side-nav-links' activeclass='active'>
+          <NavLink to={'/Questions'} className='sidenavlinks' activeclass='active'>
             <img src={Globe} width='15px' alt="Globe" />
             <p style={{paddingLeft: "10px"}}>Questions</p>
           </NavLink>
-          <NavLink to={'/Tags'} className='side-nav-links' activeclass='active' style={{paddingLeft:'40px'}}>
-            <p>Tags</p>
+          <NavLink to={'/Tags'} className='sidenavlinks' activeclass='active' >
+            <p style={{paddingLeft:'20px'}}>Tags</p>
           </NavLink>
-          <NavLink to={'/community'} className='side-nav-links' activeclass='active' style={{paddingLeft:'40px'}}>
-            <p>Community</p>
+          <NavLink to={'/community'} className='sidenavlinks' activeclass='active' >
+            <p style={{paddingLeft:'20px'}}>Community</p>
           </NavLink>
-          <NavLink to={'/expert-chat'} className='side-nav-links' activeclass='active' style={{paddingLeft:'40px'}}>
-            <p>Expert Chat</p>
+          <NavLink to={'/expert-chat'} className='sidenavlinks' activeclass='active' >
+            <p style={{paddingLeft:'20px'}}>Expert Chat</p>
           </NavLink>
-          <NavLink to={'/chat-bot'} className='side-nav-links' activeclass='active' style={{paddingLeft:'40px'}}>
-            <p>Open Source Kit</p>
+          <NavLink to={'/chat-bot'} className='sidenavlinks' activeclass='active' >
+            <p style={{paddingLeft:'20px'}}>Open Source Kit</p>
           </NavLink>
-          <NavLink to={'/Users'} className='side-nav-links' activeclass='active' style={{paddingLeft:'40px'}}>
-            <p>Users</p>
+          <NavLink to={'/Users'} className='sidenavlinks' activeclass='active' >
+            <p style={{paddingLeft:'20px'}}>Users</p>
           </NavLink>
 
         </div>
