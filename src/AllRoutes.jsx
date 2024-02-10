@@ -11,6 +11,7 @@ import UserProfile from "./pages/UserProfile/UserProfile";
 import Community from "./pages/Community/Community";
 import ExpertChat from "./pages/ExpertChat/ExpertChat";
 import OpenSourceKit from "./pages/OpenSourceKit/OpenSourceKit";
+import KitDetails from "./pages/Details/KitDetails";
 
 const AllRoutes = () => {
   return (
@@ -25,7 +26,8 @@ const AllRoutes = () => {
       <Route path="/Users/:id" element={<UserProfile />} />
       <Route path="/community" element={<Community />} />
       <Route path="/expert-chat" element={<ExpertChat />} />
-      <Route path="/chat-bot" element={<OpenSourceKit />} />
+      <Route path="/kit" element={<OpenSourceKit />} />
+      <Route path="/kit/details" element={<KitDetails />} />
     </Routes>
   );
 };

@@ -24,7 +24,7 @@ const LeftSidebar = () => {
           <NavLink to={'/expert-chat'} className='sidenavlinks' activeclass='active' >
             <p style={{paddingLeft:'20px'}}>Expert Chat</p>
           </NavLink>
-          <NavLink to={'/chat-bot'} className='sidenavlinks' activeclass='active' >
+          <NavLink to={'/kit'} className='sidenavlinks' activeclass='active' >
             <p style={{paddingLeft:'20px'}}>Open Source Kit</p>
           </NavLink>
           <NavLink to={'/Users'} className='sidenavlinks' activeclass='active' >
