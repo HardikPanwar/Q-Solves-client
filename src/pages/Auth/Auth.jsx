@@ -96,6 +96,9 @@ const Auth = () => {
           </button>
         </>
       </div>
+
+
+      
     </section>
   );
 };
