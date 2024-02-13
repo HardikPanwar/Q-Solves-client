@@ -20,6 +20,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding:12px 0px;
 }
 
 .logo{
@@ -82,4 +83,8 @@
 
 .nav-links:hover{
     background-color: #c1e5bd;
+}
+
+.logo-qsolves{
+    filter: invert(100%);
 }

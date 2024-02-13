@@ -83,23 +83,23 @@ const HomeMainbar = () => {
   };
 
   return (
-    <div className="main-bar">
-      <div className="main-bar-header">
-        {location.pathname === "/" ? (
-          <h1>Top Questions</h1>
+    <div className="main-bar" style={{marginTop:"60px"}}>
+      <div className="main-bar-header" >
+        {/* {location.pathname === "/" ? (
+          <h1 >Top Questions</h1>
         ) : (
-          <h1>All Questions</h1>
-        )}
-        <button onClick={checkAuth} className="ask-btn">
+          <h1 >All Questions</h1>
+        )} */}
+        <button onClick={checkAuth} className="ask-btn" style={{marginTop:"10px"}}>
           Ask Question
         </button>
       </div>
-      <div>
+      <div style={{marginTop:"10px"}}>
         {questionslist.data === null ? (
           <h1>Loading...</h1>
         ) : (
           <>
-            <p>{questionslist.data.length} Questions</p>
+            <p style={{marginBottom:"10px"}} >{questionslist.data.length} Questions</p>
             <QuestionList questionslist={questionslist.data} />
           </>
         )}

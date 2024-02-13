@@ -38,8 +38,8 @@ const Navbar = () => {
     <nav className="main-nav">
       <div className="navbar">
         <Link to={"/"} className="nav-item nav-logo logo">
-          <img src={logo} alt="logo" width="35"/>
-          <h2 style={{letterSpacing:2,marginLeft:10}}>Q-Solves</h2>
+          <img className="logo-qsolves" src={logo} alt="logo" width="35" color="white" />
+          <h2 style={{letterSpacing:2,marginLeft:10,textAlign:"center",marginTop:"5px"}}>Q-Solves</h2>
         </Link>
         <Link to={"/"} className="nav-item nav-btn">
           About
@@ -55,7 +55,7 @@ const Navbar = () => {
           <img src={search} alt="search" width="18" className="search-icon"/>
         </form>
         {User === null ? (
-          <Link style={{fontSize:15}} to={"/Auth"} className="nav-item nav-links">
+          <Link style={{fontSize:15}} to={"/auth/login"} className="nav-item nav-links">
             Log in
           </Link>
         ) : (
