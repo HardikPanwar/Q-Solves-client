@@ -44,7 +44,7 @@ const Editor = () => {
                     linkTool :{
                         class: LinkTool,
                         config: {
-                            endpoint: 'http://localhost:8000/kit/link/'
+                            endpoint: `${process.env.REACT_APP_BACKEND_URL}/kit/link/`
                         }
                     },
                     image: {
@@ -56,7 +56,7 @@ const Editor = () => {
                                 formData.append('image', file);
 
                                 try {
-                                    const response = await axios.post('http://localhost:8000/kit/image/', formData);
+                                    const response = await axios.post(`${process.env.REACT_APP_BACKEND_URL}/kit/image/`, formData);
                                     console.log('Image uploaded successfully:', response.data.file_name);
 
                                     return {
