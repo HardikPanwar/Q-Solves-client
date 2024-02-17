@@ -14,6 +14,7 @@ import OpenSourceKit from "./pages/OpenSourceKit/OpenSourceKit";
 import KitDetails from "./pages/Details/KitDetails";
 import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
+import CommunityDetails from "./pages/Community/CommunityDetails";
 
 const AllRoutes = () => {
   return (
@@ -32,6 +33,7 @@ const AllRoutes = () => {
       <Route path="/kit/details" element={<KitDetails />} />
       <Route path="/auth/login" element={<Login />} />
       <Route path="/auth/signup" element={<Signup />} />
+      <Route path="/community/details/:id" element={<CommunityDetails />} />
     </Routes>
   );
 };
