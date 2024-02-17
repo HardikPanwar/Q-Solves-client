@@ -14,6 +14,7 @@ import OpenSourceKit from "./pages/OpenSourceKit/OpenSourceKit";
 import KitDetails from "./pages/Details/KitDetails";
 import Login from "./pages/Auth/Login";
 import Signup from "./pages/Auth/Signup";
+import Editor from "./pages/Editor/Editor";
 
 const AllRoutes = () => {
   return (
@@ -29,9 +30,10 @@ const AllRoutes = () => {
       <Route path="/community" element={<Community />} />
       <Route path="/expert-chat" element={<ExpertChat />} />
       <Route path="/kit" element={<OpenSourceKit />} />
-      <Route path="/kit/details" element={<KitDetails />} />
       <Route path="/auth/login" element={<Login />} />
       <Route path="/auth/signup" element={<Signup />} />
+      <Route path="/kit/create" element={<Editor />} />
+      <Route path="/kit/:id" element={<KitDetails />} />
     </Routes>
   );
 };
